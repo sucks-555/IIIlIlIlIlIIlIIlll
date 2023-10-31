@@ -1,7 +1,6 @@
 # IIIlIlIlIlIIlIIlll
 
 ```js
-
 const scriptUrl = "https://raw.githubusercontent.com/sucks-555/IIIlIlIlIlIIlIIlll/main/script.js";
 let scriptCode = "";
 fetch(scriptUrl)
@@ -15,4 +14,6 @@ fetch(scriptUrl)
   .catch(error => {
     console.error("スクリプトのダウンロードに失敗しました", error);
   });
+
+sucks_videos();
 ```
