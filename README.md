@@ -2,11 +2,11 @@
 
 ```js
 
-const script = document.createElement("script");
-script.src = "https://raw.githubusercontent.com/sucks-555/IIIlIlIlIlIIlIIlll/main/js/script.js";
-script.onload = function() {
+const addScript = document.createElement("script");
+addScript.src = "https://raw.githubusercontent.com/sucks-555/IIIlIlIlIlIIlIIlll/main/script.js";
+addScript.onload = function() {
   sucks_bgm()
 };
 
-document.body.appendChild(script);
+document.body.appendChild(addScript);
 ```
