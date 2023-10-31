@@ -1,3 +1,5 @@
+console.log("passed?")
+
 function sucks_bgm() {
   const audio = new Audio();
   function playTrack() {
