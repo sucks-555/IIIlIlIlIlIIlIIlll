@@ -4,16 +4,23 @@
 const scriptUrl = "https://raw.githubusercontent.com/sucks-555/IIIlIlIlIlIIlIIlll/main/script.js";
 let scriptCode = "";
 fetch(scriptUrl)
-  .then(response => response.text())
+  .then(response => {
+    if (!response.ok) {
+      throw new Error("Error");
+    }
+    return response.text();
+  })
   .then(data => {
     scriptCode = data;
     const scriptElement = document.createElement("script");
     scriptElement.innerHTML = scriptCode;
     document.body.appendChild(scriptElement);
+    if (data) {
+      sucks_videos();
+    }
   })
   .catch(error => {
-    console.error("スクリプトのダウンロードに失敗しました", error);
+    console.error(error.message);
   });
 
-sucks_videos();
 ```
