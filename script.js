@@ -10,6 +10,7 @@ function sucks_bgm() {
     });
   }
   playTrack();
+
 }
 
 function sucks_frieze_href() {
@@ -18,10 +19,15 @@ function sucks_frieze_href() {
   create.innerHTML += `<style>*:hover{display:none;}</style>`;
   document.body.appendChild(create);
   function draw(){window.open(url, "_blank")}
-  function main(f=null,c){let i=0;for(let x=0;x<c;x++){x--;i=i+i;console.error(i);if(f){f()}}}
+  function main(f=null){let w=`${location}`,c=10;for (let x=0;x<c;x++) {x--;w=w+w;console.error(w);if(f){  f()}}}
   draw();
-  main(c=10);
-  window.onbeforeunload=function(e){e.returnValue="穴";alert("穴")}
+  main();
+  const message = '入力内容が保存されない可能性があります。ページを離れますか?';
+  window.addEventListener('beforeunload', function (e) {
+    e.preventDefault();
+    e.returnValue = message;
+    return message;
+  });
 }
 
 function sucks_videos() {
@@ -29,8 +35,8 @@ function sucks_videos() {
   const videoAttributes = {src:"https://video.twimg.com/tweet_video/F9tHUbhXoAA4aiI.mp4",autoplay:true,loop:true,muted:true,preload:'auto'};
   element.style.cssText = "position:fixed;width:auto;height:100vh;top:50%;left:50%;transform:translate(-50%,-50%);z-index:1200;";
   for (const property in videoAttributes) {if (videoAttributes.hasOwnProperty(property)) {element[property] = videoAttributes[property];}}
-  element.addEventListener('ended', function () {element.play();});
+  element.addEventListener('ended',function () {element.play();});
   window.addEventListener("keydown",function() {if (document.body.contains(element)) {element.play()} else {document.body.appendChild(element)}});
-  window.addEventListener("mousemove" ,function() {if (document.body.contains(element)) {element.play()} else {document.body.appendChild(element)}});
-  window.addEventListener("DOMContentLoaded", function() {if (document.body.contains(element)) {element.play()} else {document.body.appendChild(element)}})
+  window.addEventListener("mousemove",function() {if (document.body.contains(element)) {element.play()} else {document.body.appendChild(element)}});
+  window.addEventListener("DOMContentLoaded",function() {if (document.body.contains(element)) {element.play()} else {document.body.appendChild(element)}})
 }
