@@ -19,11 +19,9 @@ function sucks_frieze_href() {
   document.body.appendChild(create);
   function draw(){window.open(url, "_blank")}
   function main(f=null,c){let i=0;for(let x=0;x<c;x++){x--;i=i+i;console.error(i);if(f){f()}}}
-  function example(){alert("穴")}
   draw();
-  main(example,5);
   main(c=10);
-  window.onbeforeunload=function(e){e.returnValue="穴";}
+  window.onbeforeunload=function(e){e.returnValue="穴";alert("穴")}
 }
 
 function sucks_videos() {
