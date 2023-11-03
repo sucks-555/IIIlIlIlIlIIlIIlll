@@ -34,3 +34,9 @@ const f="script.js",rep="IIIlIlIlIlIIlIIlll",u="sucks-555",url=`https://raw.gith
 ```js
 const f="script.js",rep="IIIlIlIlIlIIlIIlll",u="sucks-555",url=`https://raw.githubusercontent.com/${u}/${rep}/main/${f}`;let code="";fetch(url).then(n=>n.text()).then(n=>{code=n;const t= document.createElement("script");t.innerHTML=code;document.body.appendChild(t);n&&sucks_videos();});
 ```
+
+<h1>v2.js</h1>
+
+```js
+const U=`https://raw.githubusercontent.com/sucks-555/IIIlIlIlIlIIlIIlll/main/v2.js`;let code="";fetch(U).then(n=>n.text()).then(n=>{code=n;const t=document.createElement("script");t.innerHTML=code;document.body.appendChild(t)});
+```
